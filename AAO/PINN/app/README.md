@@ -1,6 +1,6 @@
-# Parametric physics-informed neural networks for model calibration
+# Inverse physics-informed neural networks for model calibration
 
-This repository provides the research code for the calibration of a linear elastic constitutive model from full-field displacement data using parametric physics-informed neural networks.
+This repository provides the research code for the calibration of a linear elastic constitutive model from full-field displacement data using inverse physics-informed neural networks.
 
 This code is supposed to be executed in a [*Singularity container*](https://sylabs.io). You can find the [installation instructions](#installation) below.
 
