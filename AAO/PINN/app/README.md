@@ -20,10 +20,12 @@ This code is supposed to be executed in a [*Singularity container*](https://syla
     }
 
 The **results in this publication can be reproduced** with the following script, which can be found at the top level of the *app* directory (see file structure below):
-- *parametric_pinn_2d_linearelasticity.py* 
+- *inverse_pinn_2D_linearelasticity_withnoise_2e-04.py* 
+- *inverse_pinn_2D_linearelasticity_withnoise_4e-04.py* 
+- *inverse_pinn_2D_linearelasticity_withoutnoise.py* 
 
-> [!IMPORTANT]
-> Some flags are defined at the beginning of the scripts, which control, for example, whether the parametric PINN is retrained or whether the data is regenerated. In principle, the parametric PINN does not have to be retrained for each calibration and the data can also be reused as long as the setup does not change and the correct paths are specified.
+> [!NOTE]
+> The three simulations differ only in the level of noise in the full-field displacement data.
 
 
 
@@ -33,7 +35,7 @@ The **results in this publication can be reproduced** with the following script,
 1. For strict separation of input/output data and the source code, the project requires the following file structure:
 
 Repository \
-├── Reduced \
+├── AAO \
 &nbsp;&nbsp;&nbsp;&nbsp;├── PINN \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── app \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── input \
@@ -55,15 +57,15 @@ Repository \
 
 ### Singularity
 
-You can find the singularity definition file in the *.devcontainer* directory. To build the image, navigate to your `<repository directory>/Reduced/PINN` (see directory tree above) and run:
+You can find the singularity definition file in the *.devcontainer* directory. To build the image, navigate to your `<repository directory>/AAO/PINN` (see directory tree above) and run:
 
     singularity build calibrationpaper.sif app/.devcontainer/container.def
 
 Once the image is built, you can run the scripts via:
 
-    singularity run --nv calibrationpaper.sif python3 <full-path-to-script>/parametric_pinn_2d_linearelasticity.py
+    singularity run --nv calibrationpaper.sif python3 <full-path-to-script>/<script-name>
 
-Please replace `<full-path-to-script>` in the above command according to your file structure.
+Please replace `<full-path-to-script>` and `<script-name>` in the above command according to your file structure and the script you want to execute.
 
 > [!IMPORTANT]
 > You may have to use the *fakreroot* option of singularity if you do not have root rights on your system. In this case, you can try building the image by running the command `singularity build --fakeroot calibrationpaper.sif app/.devcontainer/container.def`. However, the fakeroot option must be enabled by your system administrator. For further information, please refer to the [Singularity documentation](https://sylabs.io/docs/).

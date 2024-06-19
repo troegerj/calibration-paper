@@ -1,0 +1,5 @@
+### OS related files
+# MacOS
+.DS_Store
+# thumbnail cache on Windows
+Thumbs.db
