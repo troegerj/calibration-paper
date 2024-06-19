@@ -32,7 +32,7 @@ This repository provides the research code and data employed for the calibration
 > [!NOTE] 
 > Results regarding model discovery can be reproduced with the research code and data provided in this [GitHub repository](https://github.com/EUCLID-code/EUCLID-hyperelasticity).
 
-**The structure of repository is as follows:**
+**The structure of this repository is as follows:**
 
 Repository \
 ├── Experimental_Data \
