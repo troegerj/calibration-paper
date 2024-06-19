@@ -40,6 +40,13 @@ From: nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
     ${CONDA_DIR}/bin/conda config --set solver libmamba
     ${CONDA_DIR}/bin/conda env create -f /data/requirements-conda.yml
 
+    # Install fenicsx as Ubuntu package
+    apt-get update
+    apt-get install -y software-properties-common
+    add-apt-repository ppa:fenics-packages/fenics
+    apt-get update
+    DEBIAN_FRONTEND=noninteractive apt-get install -y fenicsx
+
     # Install gmsh (dependencies required by gmsh Python package)
     apt-get install -y gmsh
 
