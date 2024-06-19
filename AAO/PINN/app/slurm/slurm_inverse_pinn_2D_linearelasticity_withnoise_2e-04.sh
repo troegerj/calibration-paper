@@ -6,7 +6,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
 
-##singularity build --fakeroot --force calibrationpinn.sif app/.devcontainer/calibrationpinn.def
+## Build command
+## singularity build --fakeroot --force calibrationpaper.sif app/.devcontainer/container.def
 
 SCRIPT=inverse_pinn_2D_linearelasticity_withnoise_2e-04.py
 
