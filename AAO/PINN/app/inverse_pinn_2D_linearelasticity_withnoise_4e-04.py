@@ -90,7 +90,7 @@ def run_2D_FEM_plate_with_hole_simulation(
 ):
     ################################################################################
     ##### Input data preprocessing
-    input_file_name = "with_noise_4e-04"
+    input_file_name = "displacements_withNoise4e-04.csv"
     input_subdir_name = os.path.join("Paper_Calibration", noise_level)
     preprocess_calibration_paper_data_2D(input_file_name, input_subdir_name)
 
