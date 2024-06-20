@@ -3,3 +3,6 @@
 .DS_Store
 # thumbnail cache on Windows
 Thumbs.db
+
+# Slurm output files
+*.out
