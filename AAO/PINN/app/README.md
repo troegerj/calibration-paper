@@ -43,8 +43,8 @@ Repository \
 &nbsp;&nbsp;&nbsp;&nbsp;└── ... \
 └── ...
 
-> [!NOTE]
-> The output folder is normally created automatically, if it does not already exist.
+> [!IMPORTANT]
+> If the output directory (see file structure above) does not already exist, it must be created manually before the simulation is started.
 
 2. Clone the repository into the *Repository* directory via:
 
