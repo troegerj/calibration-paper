@@ -6,3 +6,6 @@ Thumbs.db
 
 # Slurm output files
 *.out
+
+# Output directory
+output
