@@ -18,4 +18,4 @@ srun singularity run \
  --nvccli \
  --bind output:/data/output \
  calibrationpaper.sif \
- python3 /home/davanton/development/CalibrationPaper/AAO/PINN/app/${SCRIPT}
+ python /home/davanton/development/CalibrationPaper/AAO/PINN/app/${SCRIPT}
