@@ -12,8 +12,8 @@ From: nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
 
 %post
     #Environment (only for build time) 
-    export PYTHON_RELEASE=3.10.14
-    export PYTHON_VERSION=3.10
+    export PYTHON_RELEASE=3.11.1
+    export PYTHON_VERSION=3.11
     export CONTAINER_HOME=/data
 
     #Install base utilities
@@ -36,7 +36,7 @@ From: nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
     #Install Python requirements
     pip install --upgrade pip
     pip install -r ${CONTAINER_HOME}/requirements.txt
-    pip install "jax[cuda12]"
+    pip install "jax[cuda12]==0.4.14"
 
     #Clean up
     apt-get clean && \
