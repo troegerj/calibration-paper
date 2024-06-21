@@ -66,11 +66,11 @@ Once the image is built, you can run the scripts via:
 Please replace `<full-path-to-script>` in the above command according to your file structure.
 
 > [!IMPORTANT]
-> You may have to use the *fakreroot* option of singularity if you do not have root rights on your system. In this case, you can try building the image by running the command `singularity build --fakeroot calibrationpaper.sif app/.devcontainer/container.def`. However, the fakeroot option must be enabled by your system administrator. For further information, please refer to the [Singularity documentation](https://sylabs.io/docs/).
+> You may have to use the *fakeroot* option of singularity if you do not have root rights on your system. In this case, you can try building the image by running the command `singularity build --fakeroot calibrationpaper.sif app/.devcontainer/container.def`. However, the fakeroot option must be enabled by your system administrator. For further information, please refer to the [Singularity documentation](https://sylabs.io/docs/).
 
 
 
 ## Citing the code
 
 
-If you use this research code, please cite the [related scientific publication](#related-scientic-publication) as specified above.
+If you use this research code, please cite the [related scientific publication](#related-scientific-publication) as specified above.
