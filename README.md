@@ -1,8 +1,12 @@
 # Reduced and All-at-Once Approaches for Model Calibration and Discovery in Computational Solid Mechanics
 
-This repository provides the research code and data employed for the calibration of constitutive models from full-field displacement data in the following publication:
+This repository provides the research code and data employed for the calibration and discovery of constitutive models from full-field displacement data in the following publication:
 
-[*"Reduced and All-at-Once Approaches for Model Calibration and Discovery in Computational Solid Mechanics"*](https://arxiv.org/abs/2404.16980)
+[*"Reduced and All-at-Once Approaches for Model Calibration and Discovery in Computational Solid Mechanics"*](https://doi.org/10.1115/1.4066118)
+
+<h1 align="center">
+<img src="graphical_abstract.png" width="600">
+</h1><br>
 
 ## Citation
 ```
@@ -10,8 +14,11 @@ This repository provides the research code and data employed for the calibration
     title={Reduced and all-at-once approaches for model calibration and discovery in computational solid mechanics},
     author={Römer, Ulrich and Hartmann, Stefan and Tröger, Jendrik-Alexander and Anton, David and Wessels, Henning and Flaschel, Moritz and De Lorenzis, Laura},
     year={2024},
-    journal={arXiv preprint},
-    doi={https://doi.org/10.48550/arXiv.2404.16980}
+    journal={Applied Mechanics Reviews},
+    volume={77},
+    number={04},
+    pages={040801},
+    doi={https://doi.org/10.1115/1.4066118}
 }
 ```
 
@@ -47,9 +54,3 @@ Repository \
 
 > [!IMPORTANT]
 > Installation instructions for the specific methods are given in the respective subdirectories.
-
-
-
-
-
-

@@ -2,7 +2,7 @@
 
 This repository provides the research code for model calibration using nonlinear least-squares and uncertainty quantification in the frequentist setting.
 
-Routines for **uncertainty quantification** comprise uncertainty quantification in single-step calibrations using **Gaussian error propagation (first-order second moment method)** and **Monte Carlo method**. The uncertainty quantification in two-step calibrations using nonlinear least-squares is provided in the subdirectory *twoStepUQ*, see Appendix G of the [related scientific publication](#related-scientific-publication) for the theoretical details.
+Routines for **uncertainty quantification** comprise uncertainty quantification in single-step calibrations using **Gaussian error propagation (first-order second-moment method)** and **Monte Carlo method**. The uncertainty quantification in two-step calibrations using nonlinear least-squares is provided in the subdirectory *twoStepUQ*, see Appendix G of the [related scientific publication](#related-scientific-publication) for the theoretical details.
 
 Three examples are provided:
 - Calibration of linear elasticity from full-field displacement data using synthetic experimental data 
@@ -20,14 +20,17 @@ If you use this research code, please cite the [related scientific publication](
 
 ## Related scientific publication
 
-[*"Reduced and All-at-Once Approaches for Model Calibration and Discovery in Computational Solid Mechanics"*](https://arxiv.org/abs/2404.16980)
+[*"Reduced and All-at-Once Approaches for Model Calibration and Discovery in Computational Solid Mechanics"*](https://doi.org/10.1115/1.4066118)
 
 ```
 @article{roemer_modelCalibration_2024,
     title={Reduced and all-at-once approaches for model calibration and discovery in computational solid mechanics},
     author={Römer, Ulrich and Hartmann, Stefan and Tröger, Jendrik-Alexander and Anton, David and Wessels, Henning and Flaschel, Moritz and De Lorenzis, Laura},
     year={2024},
-    journal={arXiv preprint},
-    doi={https://doi.org/10.48550/arXiv.2404.16980}
+    journal={Applied Mechanics Reviews},
+    volume={77},
+    number={04},
+    pages={040801},
+    doi={https://doi.org/10.1115/1.4066118}
 }
 ```
